@@ -48,9 +48,44 @@ gestao-escolar-db/
         ├── query_media_notas.png
         └── query_turmas_professor.png
 
+---
+
 ## 📋 Pré-requisitos
 
 - MySQL 
 - MongoDB 5.0+
 - MongoDB Compass 
 - MySQL Workbench 
+
+## Vantagens e Desvantagens
+---
+### ✅ SQL (MySQL)
+Vantagens:
+Integridade ACID garantida
+Consultas complexas mais simples (JOIN)
+Constraints nativas (CHECK, UNIQUE)
+Ideal para relatórios e BI
+
+Desvantagens:
+Rigidez de schema (ALTER TABLE custoso)
+Escalabilidade vertical limitada
+
+### ✅ NoSQL (MongoDB)
+Vantagens:
+Schema flexível (evolução fácil)
+Performance de leitura (dados aninhados)
+Escalabilidade horizontal nativa
+
+Desvantagens:
+Sem integridade referencial nativa
+Queries complexas verbosas ($lookup múltiplos)
+Transações multi-documento complexas
+
+---
+
+## 🏆 Modelo Recomendado para Produção
+SQL (MySQL) é a escolha ideal para este cenário porque:
+Natureza Transacional: Notas, matrículas e históricos exigem ACID
+Relatórios Complexos: JOINs são mais eficientes que $lookup múltiplos
+Integridade de Dados: Foreign Keys previnem dados órfãos
+Regras de Negócio: Constraints como CHECK(nota <= nota_maxima)
