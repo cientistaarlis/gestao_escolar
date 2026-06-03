@@ -91,10 +91,17 @@ gestao-escolar-db/
 | **Facilidade de Uso** | ⭐⭐⭐⭐ | ⭐⭐⭐ |
 
 ---
+### 📊 Modelo Recomendado para Produção
 
-## 🏆 Modelo Recomendado para Produção
-SQL (MySQL) é a escolha ideal para este cenário porque:
-Natureza Transacional: Notas, matrículas e históricos exigem ACID
-Relatórios Complexos: JOINs são mais eficientes que $lookup múltiplos
-Integridade de Dados: Foreign Keys previnem dados órfãos
-Regras de Negócio: Constraints como CHECK(nota <= nota_maxima)
+> **💡 Recomendação:** SQL (MySQL)
+
+**Justificativa Técnica:**
+
+1. **🔒 Natureza dos Dados (Transacionais e Críticos)**  
+   Um sistema acadêmico lida com dados oficiais, históricos escolares, notas e vínculos legais. A integridade referencial e transações ACID são inegociáveis.
+
+2. **📈 Complexidade de Consultas (BI e Relatórios)**  
+   O coração de um sistema acadêmico são os relatórios. O modelo relacional cruza tabelas normalizadas de forma eficiente.
+
+3. **⚙️ Restrições de Negócio**  
+   SQL permite embutir regras de negócio no banco (CHECK constraints), atuando como última linha de defesa contra dados corrompidos.
