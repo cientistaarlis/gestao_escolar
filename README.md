@@ -15,38 +15,47 @@ Demonstrar na prática as diferenças entre modelagem relacional e documental ap
 ---
 
 ## 🗂️ Estrutura do Projeto
-gestao-escolar-db/
-├── README.md
-├── sql/
-│   ├── 01_create_tables.sql
-│   ├── 02_insert_data.sql
-│   ├── 03_select_alunos.sql
-│   ├── 04_select_prof_horario_sala.sql
-│   ── 05_select_alunos_media.sql
-── mongodb/
-│   ├── collections/
-│   │   ├── alunos.json
-│   │   ├── departamentos.json
-│   │   ├── disciplinas.json
-│   │   ├── matriculas.json
-│   │   ├── notas.json
-│   │   ├── professores.json
-│   │   └── turmas.json
-│   └── queries/
-│       ├── 01_turmas_disciplina_professor.js
-│       ├── 02_media_notas_aluno.js
-│       └── 03_turmas_professor_horario.js
-└── screenshots/
-    ├── mysql/
-    │   ├── schema_tables.png
-    │   ├── select_alunos.png
-    │   ├── select_prof_horario_sala.png
-    │   └── select_alunos_media.png
-    └── mongodb/
-        ├── collections_structure.png
-        ├── query_turmas_disciplina.png
-        ├── query_media_notas.png
-        └── query_turmas_professor.png
+
+<details>
+<summary><b>📁 Ver estrutura completa</b></summary>
+
+**📂 Raiz**
+- 📄 README.md
+
+**📂 sql/**
+- 📄 01_create_tables.sql
+- 📄 02_insert_data.sql
+- 📄 03_select_alunos.sql
+- 📄 04_select_prof_horario_sala.sql
+- 📄 05_select_alunos_media.sql
+
+**📂 mongodb/**
+- 📂 collections/
+  - 📄 alunos.json
+  - 📄 departamentos.json
+  - 📄 disciplinas.json
+  - 📄 matriculas.json
+  - 📄 notas.json
+  - 📄 professores.json
+  - 📄 turmas.json
+- 📂 queries/
+  - 📄 01_turmas_disciplina_professor.js
+  - 📄 02_media_notas_aluno.js
+  - 📄 03_turmas_professor_horario.js
+
+**📂 screenshots/**
+- 📂 mysql/
+  - 📷 schema_tables.png
+  - 📷 select_alunos.png
+  - 📷 select_prof_horario_sala.png
+  - 📷 select_alunos_media.png
+- 📂 mongodb/
+  - 📷 collections_structure.png
+  - 📷 query_turmas_disciplina.png
+  - 📷 query_media_notas.png
+  - 📷 query_turmas_professor.png
+
+</details>
 
 ---
 
