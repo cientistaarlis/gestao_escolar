@@ -1,0 +1,40 @@
+//Consulta 3: Turmas com Professor, Horário e Sala
+db.turmas.aggregate([
+  {
+    $lookup: {
+      from: "disciplinas",
+      localField: "disciplinaId",
+      foreignField: "_id",
+      as: "disciplina"
+    }
+  },
+  {
+    $lookup: {
+      from: "professores",
+      localField: "professorId",
+      foreignField: "_id",
+      as: "professor"
+    }
+  },
+  {
+    $unwind: "$disciplina"
+  },
+  {
+    $unwind: "$professor"
+  },
+  {
+    $project: {
+      _id: 0,
+      turmaId: "$_id",
+      disciplina: "$disciplina.nome",
+      professor: "$professor.nome",
+      horario: "$horario",
+      sala: "$sala",
+      ano: "$ano",
+      semestre: "$semestre"
+    }
+  },
+  {
+    $sort: { ano: -1, semestre: 1, horario: 1 }
+  }
+])

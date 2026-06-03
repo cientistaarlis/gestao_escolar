@@ -1,0 +1,69 @@
+//Consulta 2: Média de Notas por Aluno
+db.notas.aggregate([
+  {
+    $lookup: {
+      from: "matriculas",
+      localField: "matriculaId",
+      foreignField: "_id",
+      as: "matricula"
+    }
+  },
+  {
+    $unwind: "$matricula"
+  },
+  {
+    $lookup: {
+      from: "alunos",
+      localField: "matricula.alunoId",
+      foreignField: "_id",
+      as: "aluno"
+    }
+  },
+  {
+    $unwind: "$aluno"
+  },
+  {
+    $lookup: {
+      from: "turmas",
+      localField: "matricula.turmaId",
+      foreignField: "_id",
+      as: "turma"
+    }
+  },
+  {
+    $unwind: "$turma"
+  },
+  {
+    $lookup: {
+      from: "disciplinas",
+      localField: "turma.disciplinaId",
+      foreignField: "_id",
+      as: "disciplina"
+    }
+  },
+  {
+    $unwind: "$disciplina"
+  },
+  {
+    $group: {
+      _id: {
+        alunoId: "$aluno._id",
+        alunoNome: "$aluno.nome",
+        disciplinaId: "$disciplina._id",
+        disciplinaNome: "$disciplina.nome"
+      },
+      mediaNotas: { $avg: "$nota" }
+    }
+  },
+  {
+    $project: {
+      _id: 0,
+      aluno: "$_id.alunoNome",
+      disciplina: "$_id.disciplinaNome",
+      mediaNotas: { $round: ["$mediaNotas", 2] }
+    }
+  },
+  {
+    $sort: { aluno: 1, mediaNotas: -1 }
+  }
+])

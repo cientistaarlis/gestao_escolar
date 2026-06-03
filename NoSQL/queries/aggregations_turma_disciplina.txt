@@ -1,0 +1,43 @@
+//CONSULTA(AGGREGATIONS) "Turmas + Disciplina + Professor + Horário + Sala" 
+db.turmas.aggregate([
+  {
+    "$lookup": {
+      "from": "disciplinas",
+      "localField": "disciplinaId",
+      "foreignField": "_id",
+      "as": "disciplina"
+    }
+  },
+  {
+    "$unwind": "$disciplina"
+  },
+  {
+    "$lookup": {
+      "from": "professores",
+      "localField": "professorId",
+      "foreignField": "_id",
+      "as": "professor"
+    }
+  },
+  {
+    "$unwind": "$professor"
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "turma_id": "$_id",
+      "disciplina": "$disciplina.nome",
+      "professor": "$professor.nome",
+      "horario": 1,
+      "sala": 1,
+      "ano": 1,
+      "semestre": 1
+    }
+  },
+  {
+    "$sort": {
+      "ano": -1,
+      "semestre": 1
+    }
+  }
+]).pretty();
