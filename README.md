@@ -1,6 +1,6 @@
 # 📚 Sistema de Gestão Escolar - Comparação SQL vs NoSQL
 
-Projeto acadêmico que implementa um sistema de gestão escolar em dois paradigmas de banco de dados: **Relacional (MySQL)** e **Não Relacional (MongoDB)**, comparando modelagem, consultas e abordagens.
+Projeto acadêmico da Pós Graduação do IFSP que implementa um sistema de gestão escolar em dois paradigmas de banco de dados: **Relacional (MySQL)** e **Não Relacional (MongoDB)**, comparando modelagem, consultas e abordagens.
 
 ---
 
