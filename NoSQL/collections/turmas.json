@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "507f1f77bcf86cd799439051",
+    "disciplinaId": "507f1f77bcf86cd799439041",
+    "professorId": "507f1f77bcf86cd799439021",
+    "ano": 2024,
+    "semestre": 1,
+    "horario": "Seg/Qua 19:00-21:00",
+    "sala": "Lab 3"
+  },
+  {
+    "_id": "507f1f77bcf86cd799439052",
+    "disciplinaId": "507f1f77bcf86cd799439042",
+    "professorId": "507f1f77bcf86cd799439022",
+    "ano": 2024,
+    "semestre": 1,
+    "horario": "Ter/Qui 18:00-19:30",
+    "sala": "Sala 12"
+  }
+]

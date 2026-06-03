@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "507f1f77bcf86cd799439031",
+    "nome": "João Pedro Santos",
+    "dataNascimento": {
+      "$date": "2006-05-12T00:00:00.000Z"
+    },
+    "dataMatricula": {
+      "$date": "2024-01-20T00:00:00.000Z"
+    },
+    "email": "joao.santos@aluno.edu",
+    "telefone": "(71) 99999-1111"
+  },
+  {
+    "_id": "507f1f77bcf86cd799439032",
+    "nome": "Ana Beatriz Lima",
+    "dataNascimento": {
+      "$date": "2007-08-25T00:00:00.000Z"
+    },
+    "dataMatricula": {
+      "$date": "2024-01-20T00:00:00.000Z"
+    },
+    "email": "ana.lima@aluno.edu",
+    "telefone": "(11) 98888-2222"
+  },
+  {
+    "_id": "507f1f77bcf86cd799439033",
+    "nome": "Lucas Martins",
+    "dataNascimento": {
+      "$date": "2006-11-02T00:00:00.000Z"
+    },
+    "dataMatricula": {
+      "$date": "2024-01-21T00:00:00.000Z"
+    },
+    "email": "lucas.martins@aluno.edu",
+    "telefone": "(75) 97777-3333"
+  }
+]

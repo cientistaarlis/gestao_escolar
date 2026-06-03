@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "507f1f77bcf86cd799439061",
+    "alunoId": "507f1f77bcf86cd799439031",
+    "turmaId": "507f1f77bcf86cd799439051",
+    "dataMatricula": {
+      "$date": "2022-01-25T00:00:00.000Z"
+    },
+    "status": "matriculado"
+  },
+  {
+    "_id": "507f1f77bcf86cd799439062",
+    "alunoId": "507f1f77bcf86cd799439032",
+    "turmaId": "507f1f77bcf86cd799439051",
+    "dataMatricula": {
+      "$date": "2026-01-26T00:00:00.000Z"
+    },
+    "status": "matriculado"
+  },
+  {
+    "_id": "507f1f77bcf86cd799439063",
+    "alunoId": "507f1f77bcf86cd799439033",
+    "turmaId": "507f1f77bcf86cd799439052",
+    "dataMatricula": {
+      "$date": "2024-01-27T00:00:00.000Z"
+    },
+    "status": "matriculado"
+  },
+  {
+    "_id": "507f1f77bcf86cd799439064",
+    "alunoId": "507f1f77bcf86cd799439031",
+    "turmaId": "507f1f77bcf86cd799439052",
+    "dataMatricula": {
+      "$date": "2023-02-01T00:00:00.000Z"
+    },
+    "status": "matriculado"
+  }
+]

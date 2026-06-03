@@ -1,0 +1,14 @@
+
+
+[
+  {
+    "_id": "507f1f77bcf86cd799439011",
+    "nome": "Ciências Exatas",
+    "descricao": "Matemática, Física, Computação"
+  },
+  {
+    "_id": "507f1f77bcf86cd799439012",
+    "nome": "Ciências Humanas",
+    "descricao": "História, Geografia, Filosofia"
+  }
+]

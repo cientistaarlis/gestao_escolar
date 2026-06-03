@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "507f1f77bcf86cd799439021",
+    "nome": "Dr. Carlos Alberto",
+    "dataContratacao": {
+      "$date": "2025-03-10T00:00:00.000Z"
+    },
+    "email": "carlos.alberto@escola.edu",
+    "telefone": "(79) 98765-4321",
+    "departamentoId": "507f1f77bcf86cd799439011"
+  },
+  {
+    "_id": "507f1f77bcf86cd799439022",
+    "nome": "Profa. Mariana Silva",
+    "dataContratacao": {
+      "$date": "2022-02-15T00:00:00.000Z"
+    },
+    "email": "mariana.silva@escola.edu",
+    "telefone": "(11) 91234-5678",
+    "departamentoId": "507f1f77bcf86cd799439012"
+  }
+]

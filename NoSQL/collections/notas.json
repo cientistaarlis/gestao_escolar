@@ -1,0 +1,44 @@
+[
+  {
+    "matriculaId": "507f1f77bcf86cd799439061",
+    "tipoAvaliacao": "AV1",
+    "nota": 8.5,
+    "notaMaxima": 10
+  },
+  {
+    "matriculaId": "507f1f77bcf86cd799439061",
+    "tipoAvaliacao": "AV2",
+    "nota": 7.0,
+    "notaMaxima": 10
+  },
+  {
+    "matriculaId": "507f1f77bcf86cd799439062",
+    "tipoAvaliacao": "AV1",
+    "nota": 9.0,
+    "notaMaxima": 10
+  },
+  {
+    "matriculaId": "507f1f77bcf86cd799439062",
+    "tipoAvaliacao": "AV2",
+    "nota": 8.0,
+    "notaMaxima": 10
+  },
+  {
+    "matriculaId": "507f1f77bcf86cd799439063",
+    "tipoAvaliacao": "AV1",
+    "nota": 6.5,
+    "notaMaxima": 10
+  },
+  {
+    "matriculaId": "507f1f77bcf86cd799439063",
+    "tipoAvaliacao": "Trabalho",
+    "nota": 8.0,
+    "notaMaxima": 10
+  },
+  {
+    "matriculaId": "507f1f77bcf86cd799439064",
+    "tipoAvaliacao": "AV1",
+    "nota": 5.0,
+    "notaMaxima": 10
+  }
+]
