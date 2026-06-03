@@ -57,29 +57,38 @@ gestao-escolar-db/
 - MongoDB Compass 
 - MySQL Workbench 
 
-## Vantagens e Desvantagens
 ---
+
+## ⚖️ Vantagens e Desvantagens
+
 ### ✅ SQL (MySQL)
-Vantagens:
-Integridade ACID garantida
-Consultas complexas mais simples (JOIN)
-Constraints nativas (CHECK, UNIQUE)
-Ideal para relatórios e BI
 
-Desvantagens:
-Rigidez de schema (ALTER TABLE custoso)
-Escalabilidade vertical limitada
+| **Vantagens** | **Desvantagens** |
+|:--------------|:-----------------|
+| ✅ Integridade ACID garantida | ❌ Rigidez de schema (ALTER TABLE custoso) |
+| ✅ Consultas complexas mais simples (JOIN) | ❌ Escalabilidade vertical limitada |
+| ✅ Constraints nativas (CHECK, UNIQUE) | |
+| ✅ Ideal para relatórios e BI | |
 
-### ✅ NoSQL (MongoDB)
-Vantagens:
-Schema flexível (evolução fácil)
-Performance de leitura (dados aninhados)
-Escalabilidade horizontal nativa
+### 🍃 NoSQL (MongoDB)
 
-Desvantagens:
-Sem integridade referencial nativa
-Queries complexas verbosas ($lookup múltiplos)
-Transações multi-documento complexas
+| **Vantagens** | **Desvantagens** |
+|:--------------|:-----------------|
+| ✅ Schema flexível (evolução fácil) | ❌ Sem integridade referencial nativa |
+| ✅ Performance de leitura (dados aninhados) | ❌ Queries complexas verbosas ($lookup múltiplos) |
+| ✅ Escalabilidade horizontal nativa | ❌ Transações multi-documento complexas |
+
+---
+
+### 🔍 Comparativo Direto
+
+| Critério | MySQL | MongoDB |
+|:---------|:------|:--------|
+| **Integridade** | ⭐⭐⭐⭐⭐ | ⭐⭐ |
+| **Flexibilidade** | ⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **Consultas Complexas** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| **Escalabilidade** | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| **Facilidade de Uso** | ⭐⭐⭐⭐ | ⭐⭐⭐ |
 
 ---
 
